@@ -3,6 +3,15 @@ $comfort: 'Comfortaa', cursive;
 
 body {
     font-family: $patrick;
+    &.lock {
+        @media (max-width: 930px) {
+            overflow: hidden;
+        }
+    }
+}
+.wrapper {
+    overflow: hidden;
+    overflow-x: hidden;
 }
 .container {
     padding: 0 20px;
@@ -119,12 +128,15 @@ body {
     width: 100%;
     height: 100Vh;
 }
-// main 
-.main {
+// presentation
+.presentation {
+    background: url('../../img/top\ orange.svg') no-repeat;
+    background-position: bottom right;
+    padding-bottom: 10px;
     &__content {
         display: flex;
         justify-content: space-around;
-        margin-top: 70px;
+        margin: 70px 0 200px;
         @media (max-width: 1024px) {
             flex-direction: column-reverse;
             align-items: center;
@@ -154,5 +166,48 @@ body {
         @media (max-width: 930px) {
             margin-top: 10px;
         }
+    }
+}
+// orange
+.orange {
+    background: #fafafa;
+    padding: 100px 0 200px;
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        flex: 0 0 100%;
+    }
+    &__info {
+        max-width: 700px;
+        margin-left: 100px;
+        border-bottom: 5px solid #ee7353;
+        &-text {
+            font-size: 36px;
+            color: #882029;
+            line-height: 45px;
+            &:first-child {
+                padding-bottom: 30px;
+            }
+        }
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            height: 140px;
+            border-radius: 100px;
+            background: #ee7353;
+            margin: 50px auto;
+            & i {
+                color: #fff;
+                font-size: 60px;
+                padding-left: 10px;
+            }
+        }
+    }
+    &__img {
+        flex: 0 0 50%;
     }
 }

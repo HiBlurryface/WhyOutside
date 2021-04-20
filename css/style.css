@@ -2,6 +2,17 @@ body {
   font-family: "Patrick Hand", cursive;
 }
 
+@media (max-width: 930px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
 .container {
   padding: 0 20px;
   margin: 0px auto;
@@ -142,17 +153,23 @@ body {
   height: 100Vh;
 }
 
-.main__content {
+.presentation {
+  background: url("../../img/top orange.svg") no-repeat;
+  background-position: bottom right;
+  padding-bottom: 10px;
+}
+
+.presentation__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 70px;
+  margin: 70px 0 200px;
 }
 
 @media (max-width: 1024px) {
-  .main__content {
+  .presentation__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -163,27 +180,27 @@ body {
   }
 }
 
-.main__block {
+.presentation__block {
   max-width: 500px;
 }
 
 @media (min-width: 1025px) {
-  .main__block:first-child {
+  .presentation__block:first-child {
     margin-right: 100px;
   }
 }
 
 @media (max-width: 1024px) {
-  .main__block:last-child {
+  .presentation__block:last-child {
     margin-bottom: 100px;
   }
 }
 
-.main__block-person {
+.presentation__block-person {
   width: 105%;
 }
 
-.main__title {
+.presentation__title {
   text-align: center;
   font-size: 90px;
   color: #fff;
@@ -191,7 +208,72 @@ body {
 }
 
 @media (max-width: 930px) {
-  .main__title {
+  .presentation__title {
     margin-top: 10px;
   }
+}
+
+.orange {
+  background: #fafafa;
+  padding: 100px 0 200px;
+}
+
+.orange__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orange__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.orange__info {
+  max-width: 700px;
+  margin-left: 100px;
+  border-bottom: 5px solid #ee7353;
+}
+
+.orange__info-text {
+  font-size: 36px;
+  color: #882029;
+  line-height: 45px;
+}
+
+.orange__info-text:first-child {
+  padding-bottom: 30px;
+}
+
+.orange__info-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  background: #ee7353;
+  margin: 50px auto;
+}
+
+.orange__info-btn i {
+  color: #fff;
+  font-size: 60px;
+  padding-left: 10px;
+}
+
+.orange__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
