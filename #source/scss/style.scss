@@ -130,7 +130,7 @@ body {
 }
 // presentation
 .presentation {
-    background: url('../../img/top\ orange.svg') no-repeat;
+    background: url('../img/top\ orange.svg') no-repeat;
     background-position: bottom right;
     padding-bottom: 10px;
     &__content {
@@ -172,17 +172,17 @@ body {
 .orange {
     background: #fafafa;
     padding: 100px 0 200px;
+    &__container {
+        margin: 0;
+    }
     &__content {
         display: flex;
-        align-items: center;
-    }
-    &__item {
-        flex: 0 0 100%;
+        align-items: center;    
     }
     &__info {
         max-width: 700px;
-        margin-left: 100px;
         border-bottom: 5px solid #ee7353;
+        margin-left: 70px;
         &-text {
             font-size: 36px;
             color: #882029;
@@ -209,5 +209,8 @@ body {
     }
     &__img {
         flex: 0 0 50%;
+        & img {
+            width: 100%;
+        }
     }
 }
