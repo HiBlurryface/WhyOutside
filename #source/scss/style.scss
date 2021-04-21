@@ -131,6 +131,8 @@ body {
 // presentation
 .presentation {
     padding-bottom: 10px;
+    background: url('../../img/top\ orange.svg') no-repeat;
+    background-position: bottom right;
     &__content {
         display: flex;
         justify-content: space-around;
@@ -166,28 +168,7 @@ body {
         }
     }
 }
-
 // orange
-.orange__wave {
-    background: url('../img/top\ orange.svg') no-repeat;
-    width: 100vw;
-    background-position: bottom right;
-    // height: calc(490px + 110 * (100vw / 1920));
-    margin-top: -470px;
-    @media (max-width: 1920px) {
-        height: 460px;
-    }
-    @media (min-width: 1921px) {
-        height: 640px;
-    }
-    // @media (min-width: 1025px) {
-    //     background-size: cover;
-    // }
-    @media (max-width: 1024px) {
-        height: 260px;
-        margin-top: -200px;
-    }
-}
 .orange {
     background: #fafafa;
     &__container {
@@ -260,42 +241,13 @@ body {
         }
     }
 }
-.orange__end {
+.orange-end {
     background: url('../../img/end.svg') no-repeat;
+    height: 300px;
     width: 100vw;
-    // margin-bottom: calc(00px + 110 * (100vw / 1920));
-    @media (max-width: 1920px) {
-        height: 460px;
-    }
-    @media (min-width: 1921px) {
-        height: 440px;
-    }
-    @media (max-width: 1024px) {
-        height: 260px;
-    }
+    margin-bottom: 100px;
 }
-
 // blue 
-.blue__wave {
-    background: url('../img/top\ blue.svg') no-repeat;
-    width: 100vw;
-    background-position: bottom right;
-    
-    @media (max-width: 1920px) {
-        height: 460px;
-        margin-top: -200px;
-    }
-    @media (min-width: 1921px) {
-        height: 640px;
-    }
-    // @media (min-width: 1025px) {
-    //     background-size: cover;
-    // }
-    @media (max-width: 1024px) {
-        height: 260px;
-        margin-top: -200px;
-    }
-}
 .blue {
     background: #fafafa;
     &__container {
@@ -366,19 +318,5 @@ body {
         & img {
             width: 100%;
         }
-    }
-}
-.blue__end {
-    background: url('../../img/end.svg') no-repeat;
-    width: 100vw;
-    // margin-bottom: calc(00px + 110 * (100vw / 1920));
-    @media (max-width: 1920px) {
-        height: 460px;
-    }
-    @media (min-width: 1921px) {
-        height: 440px;
-    }
-    @media (max-width: 1024px) {
-        height: 260px;
     }
 }
