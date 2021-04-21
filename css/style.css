@@ -247,10 +247,6 @@ img {
   }
 }
 
-.orange-top {
-  margin-top: -5px;
-}
-
 .orange-top img {
   width: 100%;
   -o-object-fit: cover;
