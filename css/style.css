@@ -248,7 +248,13 @@ img {
 }
 
 .orange-top {
-  margin-top: -200px;
+  margin-top: -400px;
+}
+
+@media (max-width: 1024px) {
+  .orange-top {
+    margin-top: -150px;
+  }
 }
 
 .orange-top img {
