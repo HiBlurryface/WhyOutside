@@ -351,6 +351,7 @@ img {
 }
 .blue-top {
     & img {
+        margin-bottom: -5px;
         width: 100%;
         object-fit: cover;
     }

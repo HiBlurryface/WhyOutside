@@ -495,6 +495,7 @@ img {
 }
 
 .blue-top img {
+  margin-bottom: -5px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
