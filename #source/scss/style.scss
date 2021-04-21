@@ -368,27 +368,25 @@ img {
     @media (max-width: 1920px) {
         padding-bottom: 50px;
     }
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
         padding: 20px 0 30px;
     }
     &__content {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        @media (max-width: 425px) {
+        @media (max-width: 768px) {
             flex-direction: column;
         }
         &-title {
             font-size: 48px;
             color: #fff;
-            @media (min-width: 426px) {
+            @media (min-width: 769px) {
                 padding-right: 50px;
-            }
-            @media (max-width: 425px) {
-                margin-bottom: 20px;
             }
             @media (max-width: 768px) {
                 font-size: 35px;
+                margin-bottom: 20px;
             }
         }
         &-icon {
