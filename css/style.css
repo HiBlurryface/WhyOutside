@@ -251,10 +251,6 @@ img {
   }
 }
 
-.orange-top .hidden {
-  display: none;
-}
-
 .orange-top img {
   width: 100%;
   -o-object-fit: cover;

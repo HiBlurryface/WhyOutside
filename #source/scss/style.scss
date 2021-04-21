@@ -184,14 +184,11 @@ img {
         }
     }
 }
-// orange
+// orange 
 .orange-top {
     margin-top: -400px;
     @media (max-width: 1024px) {
         margin-top: -200px;
-    }
-    & .hidden {
-        display: none;
     }
     & img {
         width: 100%;
