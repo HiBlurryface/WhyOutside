@@ -8,6 +8,13 @@ body {
   }
 }
 
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .wrapper {
   overflow: hidden;
   overflow-x: hidden;
@@ -161,8 +168,6 @@ body {
 
 .presentation {
   padding-bottom: 10px;
-  background: url("../img/topOrange.svg") no-repeat;
-  background-position: bottom right;
 }
 
 .presentation__content {
@@ -187,6 +192,7 @@ body {
 }
 
 .presentation__block {
+  z-index: 100;
   max-width: 500px;
 }
 
@@ -233,6 +239,16 @@ body {
   .presentation__title {
     margin-top: 10px;
   }
+}
+
+.orange-top {
+  margin-top: -400px;
+}
+
+.orange-top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .orange {

@@ -9,6 +9,10 @@ body {
         }
     }
 }
+img {
+    user-select: none;
+    
+}
 .wrapper {
     overflow: hidden;
     overflow-x: hidden;
@@ -134,8 +138,6 @@ body {
 // presentation
 .presentation {
     padding-bottom: 10px;
-    background: url('../img/topOrange.svg') no-repeat;
-    background-position: bottom right;
     &__content {
         display: flex;
         justify-content: space-around;
@@ -146,6 +148,7 @@ body {
         }
     }
     &__block {
+        z-index: 100;
         max-width: 500px;
         @media (min-width: 1025px) {
             &:first-child {
@@ -182,6 +185,13 @@ body {
     }
 }
 // orange
+.orange-top {
+    margin-top: -400px;
+    & img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
 .orange {
     background: #fafafa;
     &__container {
