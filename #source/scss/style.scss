@@ -1,10 +1,6 @@
 $patrick: 'Patrick Hand', cursive;
 $comfort: 'Comfortaa', cursive;
 
-* {
-    margin: 0;
-    padding: 0;
-}
 body {
     font-family: $patrick;
     &.lock {
@@ -17,9 +13,6 @@ img {
     display: block;
     user-select: none;
     
-}
-li {
-    list-style: none;
 }
 .wrapper {
     overflow: hidden;
@@ -196,6 +189,7 @@ li {
 }
 // orange 
 .orange-top {
+    margin-top: -5px;
     & img {
         width: 100%;
         object-fit: cover;

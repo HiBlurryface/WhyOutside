@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Patrick Hand", cursive;
 }
@@ -19,10 +14,6 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-li {
-  list-style: none;
 }
 
 .wrapper {
@@ -254,6 +245,10 @@ li {
   .presentation__title {
     margin-top: 10px;
   }
+}
+
+.orange-top {
+  margin-top: -5px;
 }
 
 .orange-top img {
