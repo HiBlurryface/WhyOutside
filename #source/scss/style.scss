@@ -1,6 +1,10 @@
 $patrick: 'Patrick Hand', cursive;
 $comfort: 'Comfortaa', cursive;
 
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: $patrick;
     &.lock {
@@ -10,6 +14,7 @@ body {
     }
 }
 img {
+    display: block;
     user-select: none;
     
 }
