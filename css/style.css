@@ -247,6 +247,10 @@ img {
   }
 }
 
+.orange-top {
+  margin-top: -200px;
+}
+
 .orange-top img {
   margin-bottom: -5px;
   width: 100%;
