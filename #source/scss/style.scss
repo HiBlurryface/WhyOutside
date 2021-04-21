@@ -32,6 +32,7 @@ img {
     }
     &__menu {
         &-body {
+            z-index: 200;
             display: flex;
             @media (min-width: 931px) {
                 justify-content: center;

@@ -37,6 +37,7 @@ img {
 }
 
 .header__menu-body {
+  z-index: 200;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
