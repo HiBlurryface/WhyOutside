@@ -102,6 +102,7 @@ img {
         }
     }
     &__burger {
+        z-index: 300;
         @media (max-width: 930px) {
             width: 35px;
             height: 32px;

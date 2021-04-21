@@ -132,6 +132,10 @@ img {
   }
 }
 
+.header__burger {
+  z-index: 300;
+}
+
 @media (max-width: 930px) {
   .header__burger {
     width: 35px;
