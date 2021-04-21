@@ -245,6 +245,12 @@ img {
   margin-top: -400px;
 }
 
+@media (max-width: 1024px) {
+  .orange-top {
+    margin-top: -200px;
+  }
+}
+
 .orange-top img {
   width: 100%;
   -o-object-fit: cover;
