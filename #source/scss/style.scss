@@ -189,6 +189,14 @@ img {
     margin-top: -400px;
     @media (max-width: 1024px) {
         margin-top: -200px;
+        & .show {
+            display: none;
+        }
+    }
+    @media (min-width: 1025px) {
+        & .hidden {
+            display: none;
+        }
     }
     & img {
         width: 100%;

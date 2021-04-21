@@ -249,6 +249,15 @@ img {
   .orange-top {
     margin-top: -200px;
   }
+  .orange-top .show {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .orange-top .hidden {
+    display: none;
+  }
 }
 
 .orange-top img {
