@@ -22,6 +22,9 @@ body {
 // header
 .header {
     padding: 30px 0;
+    @media (max-width: 930px) {
+        padding: 20px 0;
+    }
     &__menu {
         &-body {
             display: flex;
@@ -34,7 +37,7 @@ body {
                 top: 0;
                 height: 100vh;
                 flex-direction: column;
-                background: rgba(0,0,0,0.5);
+                background: rgba(0,0,0,0.7);
                 padding: 100px 20px 0;
                 transition: 0.6s all ease 0s;
                 &.active {
@@ -116,7 +119,6 @@ body {
         }
     }
 }
-
 // intro 
 .intro {
     z-index: -100;
@@ -155,7 +157,14 @@ body {
             }
         }
         &-person {
-            width: 105%;
+            @media (min-width: 1025px) {
+                width: 105%;
+            }
+            @media (max-width: 1024px) {
+                width: 90%;
+                display: block;
+                margin: 0px auto;
+            }
         }
     }
     &__title {
@@ -163,6 +172,9 @@ body {
         font-size: 90px;
         color: #fff;
         margin-top: 60px;
+        @media (max-width: 490px) {
+            font-size: 55px;
+        }
         @media (max-width: 930px) {
             margin-top: 10px;
         }
@@ -198,6 +210,10 @@ body {
             }
             @media (max-width: 768px) {
                 font-size: 30px;
+            }
+            @media (max-width: 490px) {
+                font-size: 25px;
+                line-height: 40px;
             }
         }
         &-btn {
@@ -241,12 +257,6 @@ body {
         }
     }
 }
-.orange-end {
-    background: url('../../img/end.svg') no-repeat;
-    height: 300px;
-    width: 100vw;
-    margin-bottom: 100px;
-}
 // blue 
 .blue {
     background: #fafafa;
@@ -277,6 +287,10 @@ body {
             }
             @media (max-width: 768px) {
                 font-size: 30px;
+            }
+            @media (max-width: 490px) {
+                font-size: 25px;
+                line-height: 40px;
             }
         }
         &-btn {
@@ -318,5 +332,60 @@ body {
         & img {
             width: 100%;
         }
+    }
+}
+.blue-top {
+    & img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+// footer 
+.footer {
+    background: #758b98;
+    @media (min-width: 1921px) {
+        padding-bottom: 100px;
+    }
+    @media (max-width: 1920px) {
+        padding-bottom: 50px;
+    }
+    @media (max-width: 425px) {
+        padding: 20px 0 30px;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @media (max-width: 425px) {
+            flex-direction: column;
+        }
+        &-title {
+            font-size: 48px;
+            color: #fff;
+            @media (min-width: 426px) {
+                padding-right: 50px;
+            }
+            @media (max-width: 425px) {
+                margin-bottom: 20px;
+            }
+            @media (max-width: 768px) {
+                font-size: 35px;
+            }
+        }
+        &-icon {
+            & i {
+                font-size: 35px;
+                color: #fff;
+                &:first-child {
+                    padding-right: 17px;
+                }
+            }
+        }
+    }
+}
+.footer-bottom {
+    & img {
+        width: 100%;
+        object-fit: cover;
     }
 }
