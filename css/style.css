@@ -388,6 +388,13 @@ img {
   width: 100%;
 }
 
+.orange-end img {
+  margin-top: -2px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .blue {
   background: #fafafa;
 }
@@ -519,7 +526,15 @@ img {
      object-fit: cover;
 }
 
+.blue-end img {
+  margin-top: -2px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
+  margin-top: -2px;
   background: #758b98;
 }
 
@@ -583,10 +598,6 @@ img {
 .footer__content-icon i {
   font-size: 35px;
   color: #fff;
-}
-
-.footer__content-icon i:first-child {
-  padding-right: 17px;
 }
 
 .footer-bottom img {
